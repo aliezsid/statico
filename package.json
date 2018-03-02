@@ -1,0 +1,21 @@
+{
+  "name": "static-site-generator",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/aliezsid/statico",
+  "author": "Siddharth Gelera <sidgroks@gmail.com>",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "nodemon": "^1.17.1"
+  },
+"scripts":{
+  "dev":"nodemon --exec babel-node main.js",
+  "build":"babel main.js -o main.compiled.js",
+  "start":"node main.compiled.js"
+    }
+}
